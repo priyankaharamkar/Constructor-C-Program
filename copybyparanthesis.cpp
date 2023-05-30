@@ -12,10 +12,10 @@ class student
 		{
 			rollno=r;
 			strcpy(name,n);
-		    fee=f;
+		               fee=f;
 			
 		}
-		student(student &t)
+		student(student &t)   //copy constructor
 		{
 			this->rollno=t.rollno;
 			strcpy(this->name,t.name);
@@ -28,8 +28,9 @@ class student
 };
 int main()
 {
-	student t(1,"ram",222);
-	student tt(t); //copy constructor
+	//student t(1,"ram",222);
+              student s(2,"Geeta",2000);
+	student tt(s); //copy constructor call
 	tt.show();
 	
 }
