@@ -22,6 +22,6 @@ int main()
 	Sample s(20);
 	s.display();
 	
-	Sample s1(s);
+	Sample s1(s); //call copy constructor
 	s1.display();
 	}
